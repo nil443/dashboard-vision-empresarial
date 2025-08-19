@@ -72,52 +72,28 @@ export default function Dashboard() {
         />
       </div>
 
-      {/* Charts Row */}
-      <div className="grid gap-6 lg:grid-cols-2">
-        <Card>
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <TrendingUp className="w-5 h-5 text-success" />
-              Evolución de Ingresos
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="h-80 flex items-center justify-center bg-muted/30 rounded-lg">
-              <div className="text-center space-y-2">
-                <TrendingUp className="w-12 h-12 text-muted-foreground mx-auto" />
-                <p className="text-sm text-muted-foreground">
-                  Gráfico de líneas - Ingresos por día
-                </p>
-                <p className="text-xs text-muted-foreground">
-                  Últimos 30 días: Tendencia positiva +12.5%
-                </p>
-              </div>
+      {/* Chart Row - Full Width */}
+      <Card>
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2">
+            <TrendingUp className="w-5 h-5 text-success" />
+            Evolución de Ingresos
+          </CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div className="h-80 flex items-center justify-center bg-muted/30 rounded-lg">
+            <div className="text-center space-y-2">
+              <TrendingUp className="w-12 h-12 text-muted-foreground mx-auto" />
+              <p className="text-sm text-muted-foreground">
+                Gráfico de líneas - Ingresos por día
+              </p>
+              <p className="text-xs text-muted-foreground">
+                Últimos 30 días: Tendencia positiva +12.5%
+              </p>
             </div>
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <TrendingDown className="w-5 h-5 text-destructive" />
-              Distribución de Gastos
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="h-80 flex items-center justify-center bg-muted/30 rounded-lg">
-              <div className="text-center space-y-2">
-                <TrendingDown className="w-12 h-12 text-muted-foreground mx-auto" />
-                <p className="text-sm text-muted-foreground">
-                  Gráfico de barras - Gastos por categoría
-                </p>
-                <p className="text-xs text-muted-foreground">
-                  Mayor gasto: Salarios (45%), Material oficina (20%)
-                </p>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-      </div>
+          </div>
+        </CardContent>
+      </Card>
 
       {/* Activity Table */}
       <ActivityTable />

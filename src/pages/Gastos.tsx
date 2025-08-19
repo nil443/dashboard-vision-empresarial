@@ -143,7 +143,10 @@ export default function Gastos() {
             Gestiona los gastos y proveedores de tu empresa
           </p>
         </div>
-        <Button className="gap-2 bg-gradient-primary hover:bg-primary-hover">
+        <Button 
+          className="gap-2 bg-gradient-primary hover:bg-primary-hover"
+          onClick={() => console.log("Abrir formulario de nuevo gasto")}
+        >
           <Plus className="w-4 h-4" />
           Nuevo Gasto
         </Button>

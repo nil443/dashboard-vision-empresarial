@@ -124,7 +124,10 @@ export default function Ingresos() {
             Gestiona las facturas y ingresos de tu empresa
           </p>
         </div>
-        <Button className="gap-2 bg-gradient-primary hover:bg-primary-hover">
+        <Button 
+          className="gap-2 bg-gradient-primary hover:bg-primary-hover"
+          onClick={() => console.log("Abrir formulario de nueva factura")}
+        >
           <Plus className="w-4 h-4" />
           Nueva Factura
         </Button>

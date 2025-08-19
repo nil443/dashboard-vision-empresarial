@@ -29,7 +29,6 @@ const navigationItems = [
   { title: "Ingresos", url: "/ingresos", icon: TrendingUp },
   { title: "Gastos", url: "/gastos", icon: TrendingDown },
   { title: "Clientes", url: "/clientes", icon: Users },
-  { title: "Proveedores", url: "/proveedores", icon: Building2 },
 ];
 
 const managementItems = [
